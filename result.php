@@ -247,6 +247,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         font-size: 36px;
       }
     }
+
+    .typing-text {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      color: white;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid white;
+      animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
   </style>
 </head>
 
@@ -291,7 +320,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                   <div>
                     <h1 class="lilita-one-regular font-bold">Sistem Penentuan <br> Pemberian Kredit</h1>
                   </div>
-                  <div class="typing" id="typingText"></div>
                   <div class="container1">
                     <div class="card shadow-md">
                       <form id="creditForm" action="process.php" method="POST">
@@ -357,6 +385,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                   </div>
                 </div>
 
+                <div class="typing-text" id="typingText"></div>
+
+
                 <div class="intro--options">
                 </div>
               </div>
@@ -420,7 +451,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
             <li class="l-section section">
               <div class="about">
-                <h1 style="margin-left: 300px;" class="lilita-one-regular1">Our Team</h1>
+                <h1 style="margin-left: 300px;" class="lilita-one-regular1">Tim Kami</h1>
                 <div class="work--lockup">
                   <ul class="slider">
                     <li class="slider--item slider--item-left">
@@ -442,7 +473,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                     <li class="slider--item slider--item-left">
                       <a href="#0">
                         <div class="slider--item-image">
-                          <img src="assets\img\kaled.jpeg" alt="Victory">
+                          <img src="assets\img\alghi1.PNG" alt="Victory">
                         </div>
                         <p class="slider--item-title">Khalid Alghifari <br> 2208107010044</p>
                       </a>
@@ -482,12 +513,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                   <div class="modal">
                     <div class="modal--information">
                       <p>Banda Aceh</p>
-                      <a href="mailto:ouremail@gmail.com">jamrijamustopa@gmail.col@gmail.com</a>
+                      <a href="mailto:ouremail@gmail.com">jamrijamustopa@gmail.com</a>
                       <a href="tel:+148126287560">+62 12 628 75 60</a>
                     </div>
                     <ul class="modal--options">
 
-                      <li><a href="mailto:jamrija mustopal@gmail.com">Contact Us</a></li>
+                      <li><a href="mailto:jamrijamustopa@gmail.com">Hubungi Kami</a></li>
                     </ul>
                   </div>
                 </div>
@@ -583,10 +614,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       </div>
     </div>
     <ul class="outer-nav" style="color: white;">
-      <li class="is-active">Home</li>
-      <li>Result</li>
-      <li>About</li>
-      <li>Contact</li>
+      <li class="is-active">Beranda</li>
+      <li>Hasil</li>
+      <li>Tentang</li>
+      <li>Hubungi Kami</li>
     </ul>
   </div>
 
@@ -609,10 +640,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         var formData = $(this).serialize();
         window.location.href = 'result.php?' + formData;
       });
+
+      var text = "Hasil Penentuan Pemberian Kredit dapat dilihat pada halaman Hasil.";
+
+      $('#typingText').text(text);
     });
   </script>
-
-
 
 </body>
 
