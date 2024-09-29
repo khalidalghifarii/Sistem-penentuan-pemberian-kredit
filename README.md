@@ -45,9 +45,9 @@ Apache: Untuk menjalankan server web lokal.
 MySQL: Untuk mengelola basis data yang digunakan dalam proyek ini.
 
 ## 4. Impor Database
-Buka phpMyAdmin dengan mengakses localhost/phpmyadmin di browser.
-Buat database baru (misalnya: kreditrust_db).
-Impor file SQL yang tersedia di repository (jika ada) ke dalam database yang baru dibuat.
+- Buka phpMyAdmin dengan mengakses localhost/phpmyadmin di browser.
+- Buat database baru (misalnya: kreditrust_db).
+- Impor file SQL/.db yang tersedia di repository ke dalam database yang baru dibuat.
 
 ## 5. Akses Aplikasi
 Setelah XAMPP aktif, akses aplikasi melalui browser dengan mengunjungi:
@@ -57,29 +57,30 @@ http://localhost/KrediTrust
 ```
 
 ## 6. Penggunaan Aplikasi
-Masukkan informasi calon debitur pada formulir yang tersedia.
-Klik tombol "Submit" untuk mendapatkan hasil penilaian kelayakan kredit.
-Sistem akan menghitung skor berdasarkan parameter seperti usia, pekerjaan, penghasilan, dll., dan menampilkan apakah kredit diterima atau ditolak.
-Penjelasan Sistem
+- Masukkan informasi calon debitur pada formulir yang tersedia.
+- Klik tombol "Submit" untuk mendapatkan hasil penilaian kelayakan kredit.
+- Sistem akan menghitung skor berdasarkan parameter seperti usia, pekerjaan, penghasilan, dll., dan menampilkan apakah kredit diterima atau ditolak.
+- 
+### Penjelasan Sistem
 
 Sistem ini menentukan kelayakan kredit berdasarkan sejumlah aturan berbasis poin. Setiap parameter memiliki nilai poin yang berbeda dan poin total dari calon debitur akan menentukan apakah kredit diterima atau ditolak.
 
-Usia: Semakin tua usia, semakin tinggi poin.
-Status Pernikahan: Pelamar yang sudah menikah mendapatkan poin lebih tinggi.
-Pekerjaan: Pekerjaan dengan pendapatan stabil mendapatkan poin lebih tinggi.
-Penghasilan: Semakin tinggi penghasilan, semakin besar poin.
-Jaminan: Pelamar yang menyediakan jaminan mendapatkan poin tambahan.
-Rasio Pinjaman terhadap Penghasilan: Rasio yang lebih rendah mendapatkan poin lebih tinggi.
+- Usia: Semakin tua usia, semakin tinggi poin.
+- Status Pernikahan: Pelamar yang sudah menikah mendapatkan poin lebih tinggi.
+- Pekerjaan: Pekerjaan dengan pendapatan stabil mendapatkan poin lebih tinggi.
+- Penghasilan: Semakin tinggi penghasilan, semakin besar poin.
+- Jaminan: Pelamar yang menyediakan jaminan mendapatkan poin tambahan.
+- Rasio Pinjaman terhadap Penghasilan: Rasio yang lebih rendah mendapatkan poin lebih tinggi.
 Skor akhir akan dibandingkan dengan ambang batas, dan keputusan kredit akan diberikan berdasarkan perhitungan ini. Jika total skor ≥ 15, kredit diterima; jika < 15, kredit ditolak.
 
 ## Anggota Tim
 
 Proyek ini dikembangkan oleh Kelompok 8:
 
-Zahra Zafira - 2208107010040
-Alfi Zamriza - 2208107010080
-Muhammad Khalid Al Ghifari - 2208107010044
-Muhammad Raza Adzani - 2208107010066
+- Zahra Zafira - 2208107010040
+- Alfi Zamriza - 2208107010080
+- Muhammad Khalid Al Ghifari - 2208107010044
+- Muhammad Raza Adzani - 2208107010066
 
 ##Kesimpulan
 
